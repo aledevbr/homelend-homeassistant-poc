@@ -24,4 +24,8 @@ RUN dotnet publish "./HomeAssistantPoc.csproj" -c $BUILD_CONFIGURATION -o /app/p
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+# copia o arquivo de configuração do home assistant para a pasta do container
+COPY config.json ./ 
+# copia o arquivo de documentação para a pasta do container
+COPY README.md ./
 ENTRYPOINT ["dotnet", "HomeAssistantPoc.dll"]
