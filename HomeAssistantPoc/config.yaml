@@ -1,7 +1,7 @@
 name: "Homelend Blazor POC"
 slug: "homelend-blazor-poc"
 description: "AddOn web Blazor para teste no Home Assistant"
-version: "v1.0.1"
+version: "v1.0.2" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-arm.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
 url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
   # - armhf
@@ -19,17 +19,20 @@ map:
   # - addons:rw
   # - all_addon_configs:rw
   
-# hassio_api: true
-# hassio_role: admin
-# homeassistant_api: true
-# docker_api: true
+hassio_api: true
+hassio_role: admin
+homeassistant_api: true
+docker_api: true
 
-host_network: true
-ingress: true
-ingress_port: 0
 panel_icon: mdi:home-assistant
 panel_admin: true
 panel_title: "Homelend Blazor POC"
+
+host_network: true
+ingress: true
+ingress_port: 8080
+ingress_entry: "/"
+
 ports:
   8080/tcp: 8080
   8081/tcp: 8081
