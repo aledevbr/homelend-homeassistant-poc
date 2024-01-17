@@ -1,7 +1,7 @@
 name: "Alesil Http Info"
 slug: "alesil-http-info"
 description: "Devolve um json com todos os dados de request e também as variáveis de ambiente"
-version: "v1.0.0" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-httpinfo-arm64.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
+version: "v1.0.1" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-httpinfo-arm64.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
 url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
   # - armhf
