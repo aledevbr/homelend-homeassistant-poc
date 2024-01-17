@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'HomeAssistantPoc/**'
+      - '/.github/workflows/docker-build-homeassistantpoc-arm64.yaml'
 
 env:
   REGISTRY: ghcr.io
