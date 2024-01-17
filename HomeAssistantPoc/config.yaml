@@ -1,11 +1,11 @@
 ---
-url: "https://homelend.com.br"
-name: "Homelend Blazor POC"
-version: 2024.0117.001
+version: 1.0.0
 slug: "homelend-blazor-poc"
+name: "Homelend Blazor POC"
 description: "AddOn web Blazor para teste no Home Assistant"
+url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
-- aarch64
+  - aarch64
 hassio_api: true
 host_network: true
 ingress: true
