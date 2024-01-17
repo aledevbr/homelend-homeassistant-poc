@@ -1,7 +1,7 @@
 name: "Homelend Blazor POC"
 slug: "homelend-blazor-poc"
 description: "AddOn web Blazor para teste no Home Assistant"
-version: "1.0.1"
+version: "v1.0.1"
 url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
   # - armhf
