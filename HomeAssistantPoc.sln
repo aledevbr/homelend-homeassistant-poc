@@ -23,8 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Workflows", "Github 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeAssistantPoc", "HomeAssistantPoc", "{7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}"
 	ProjectSection(SolutionItems) = preProject
-		HomeAssistantPoc\config.json = HomeAssistantPoc\config.json
 		HomeAssistantPoc\README.md = HomeAssistantPoc\README.md
+		HomeAssistantPoc\config.yaml = HomeAssistantPoc\config.yaml
 	EndProjectSection
 EndProject
 Global
