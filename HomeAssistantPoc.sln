@@ -12,13 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		.dockerignore = .dockerignore
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		config.json = config.json
 		README.md = README.md
+		repository.json = repository.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Workflows", "Github Workflows", "{4ABC2B3C-1A61-4ECD-AF74-34D093E462AF}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\docker-build-arm.yaml = .github\workflows\docker-build-arm.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeAssistantPoc", "HomeAssistantPoc", "{7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}"
+	ProjectSection(SolutionItems) = preProject
+		HomeAssistantPoc\config.json = HomeAssistantPoc\config.json
+		HomeAssistantPoc\README.md = HomeAssistantPoc\README.md
 	EndProjectSection
 EndProject
 Global
@@ -38,6 +44,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E50EABC9-2466-4B11-8DE2-F17DA4C06617} = {7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}
+		{477A4900-0C19-4182-9F9B-102655E117D4} = {7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C5E512E-3591-46E2-93D5-346A6670410D}
