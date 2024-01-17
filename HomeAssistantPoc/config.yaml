@@ -36,7 +36,7 @@ ports:
 init: false
 startup: application
 boot: auto
-image: "ghcr.io/aledevbr/homelend-homeassistant-poc:latest"
+image: "ghcr.io/aledevbr/homelend-homeassistant-poc"
 webui: "http://[HOST]:[PORT:8080]"
 
 # {
