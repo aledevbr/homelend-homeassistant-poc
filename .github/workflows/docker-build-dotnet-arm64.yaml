@@ -1,9 +1,11 @@
-name: Build and Publish Docker Image for ARM64
+name: HomeAssistantPoc - Build and Publish Docker Image for ARM64
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'HomeAssistantPoc/**'
 
 env:
   REGISTRY: ghcr.io

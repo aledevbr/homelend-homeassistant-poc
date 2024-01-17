@@ -1,0 +1,16 @@
+FROM arm64v8/node:lts-alpine
+
+ENV HOME=/home/app
+ENV NODE_ENV=production
+
+WORKDIR $HOME/library
+
+COPY package.json ./
+
+RUN npm INSTALL --production
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["npm", "start"]
