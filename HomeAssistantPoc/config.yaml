@@ -10,14 +10,14 @@ arch:
   # - amd64
   # - i386
 map:
-  - share: rw
-  # - media: rw
-  # - homeassistant_config: rw
-  # - addon_config: rw
-  # - ssl: rw
-  # - backup: rw
-  # - addons: rw
-  # - all_addon_configs: rw
+  - share:rw
+  # - media:rw
+  # - homeassistant_config:rw
+  # - addon_config:rw
+  # - ssl:rw
+  # - backup:rw
+  # - addons:rw
+  # - all_addon_configs:rw
   
 # hassio_api: true
 # hassio_role: admin
