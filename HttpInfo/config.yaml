@@ -9,7 +9,6 @@ arch:
   - aarch64
   # - amd64
   # - i386
-- 
 map:
   - share:rw
   # - media:rw
