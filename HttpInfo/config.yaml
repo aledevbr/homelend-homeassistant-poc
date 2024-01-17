@@ -35,7 +35,7 @@ ingress_port: 8083
 ingress_entry: "/"
 
 ports:
-  8080/tcp: 8083
+  8083/tcp: 8083
 
 init: false
 startup: application
