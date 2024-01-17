@@ -15,7 +15,7 @@ COPY ["HomeAssistantPoc/HomeAssistantPoc.Client/HomeAssistantPoc.Client.csproj",
 RUN dotnet restore "./HomeAssistantPoc/HomeAssistantPoc/./HomeAssistantPoc.csproj"
 COPY . .
 WORKDIR "/src/HomeAssistantPoc/HomeAssistantPoc"
-RUN dotnet build "./HomeAssistantPoc.csproj" -c $BUILD_CONFIGURATION -o /app/build -r linux-x64
+RUN dotnet build "./HomeAssistantPoc.csproj" -c $BUILD_CONFIGURATION -o /app/build -r linux-arm64
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
