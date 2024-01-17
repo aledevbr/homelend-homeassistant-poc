@@ -1,23 +1,42 @@
----
-version: 1.0.0
-slug: "homelend-blazor-poc"
 name: "Homelend Blazor POC"
+slug: "homelend-blazor-poc"
 description: "AddOn web Blazor para teste no Home Assistant"
+version: "1.0.1"
 url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
+  # - armhf
+  # - armv7
   - aarch64
+  # - amd64
+  # - i386
+map:
+  - share: rw
+  - media: rw
+  - homeassistant_config: rw
+  - addon_config: rw
+  - ssl: rw
+  - backup: rw
+  - addons: rw
+  - all_addon_configs: rw
+  
 hassio_api: true
+hassio_role: admin
+homeassistant_api: true
+docker_api: true
+
 host_network: true
 ingress: true
 ingress_port: 0
 panel_icon: mdi:home-assistant
+panel_admin: true
 panel_title: "Homelend Blazor POC"
 ports:
   8080/tcp: 8080
   8081/tcp: 8081
 init: false
-startup: services
-image: ghcr.io/aledevbr/homelend-homeassistant-poc:latest
+startup: application
+boot: auto
+image: ghcr.io/aledevbr/homelend-homeassistant-poc
 webui: "http://[HOST]:[PORT:8080]"
 
 # {
