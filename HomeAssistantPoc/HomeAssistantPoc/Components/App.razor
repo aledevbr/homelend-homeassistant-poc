@@ -14,6 +14,17 @@
                 }
             }
         };
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            if (window !== top) {
+                var referrer = document.referrer;
+                if (referrer) {
+                    var base = document.getElementsByTagName('base')[0];
+                    var path = new URL(referrer).pathname;
+                    base.href = path.endsWith('/') ? path + "ingress/" : path + "/ingress/";
+                }
+            }
+        };
     </script>
 
     <meta charset="utf-8" />

@@ -1,7 +1,7 @@
 name: "Homelend Blazor POC"
 slug: "homelend-blazor-poc"
 description: "AddOn web Blazor para teste no Home Assistant"
-version: "v1.0.12" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-dotnet-arm64.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
+version: "v1.0.13" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-dotnet-arm64.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
 url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
   # - armhf
