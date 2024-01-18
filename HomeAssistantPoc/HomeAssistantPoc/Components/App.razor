@@ -5,10 +5,13 @@
     <!-- Captura a url base quando estiver dentro de um iFrame -->
     <script>
         window.onload = function () {
-            var referrer = document.referrer;
-            if (referrer) {
-                var base = document.getElementsByTagName('base')[0];
-                base.href = path.endsWith('/') ? path + "ingress/" : path + "/ingress/";
+            if (window !== top) {
+                var referrer = document.referrer;
+                if (referrer) {
+                    var base = document.getElementsByTagName('base')[0];
+                    var path = new URL(referrer).pathname;
+                    base.href = path.endsWith('/') ? path + "ingress/" : path + "/ingress/";
+                }
             }
         };
     </script>
