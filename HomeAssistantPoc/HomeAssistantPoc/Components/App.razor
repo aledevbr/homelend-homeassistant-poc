@@ -8,7 +8,7 @@
             var referrer = document.referrer;
             if (referrer) {
                 var base = document.getElementsByTagName('base')[0];
-                base.href = new URL(referrer).pathname;
+                base.href = path.endsWith('/') ? path + "ingress/" : path + "/ingress/";
             }
         };
     </script>
