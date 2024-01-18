@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Captura a url base quando estiver dentro de um iFrame -->
+    <script>
+        window.onload = function () {
+            var referrer = document.referrer;
+            if (referrer) {
+                var base = document.getElementsByTagName('base')[0];
+                base.href = new URL(referrer).pathname;
+            }
+        };
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
@@ -15,18 +26,6 @@
 <body>
     <Routes />
     <script src="_framework/blazor.web.js"></script>
-
-    <!-- Captura a url base quando estiver dentro de um iFrame -->
-    <script>
-        window.onload = function () {
-            var referrer = document.referrer;
-            if (referrer) {
-                var base = document.getElementsByTagName('base')[0];
-                base.href = new URL(referrer).pathname;
-            }
-        };
-    </script>
-
 </body>
 
 </html>
