@@ -18,14 +18,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Workflows", "Github Workflows", "{4ABC2B3C-1A61-4ECD-AF74-34D093E462AF}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\docker-build-arm.yaml = .github\workflows\docker-build-arm.yaml
+		.github\workflows\docker-build-dotnet-arm64.yaml = .github\workflows\docker-build-dotnet-arm64.yaml
+		.github\workflows\docker-build-httpinfo-arm64.yaml = .github\workflows\docker-build-httpinfo-arm64.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeAssistantPoc", "HomeAssistantPoc", "{7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}"
 	ProjectSection(SolutionItems) = preProject
-		HomeAssistantPoc\README.md = HomeAssistantPoc\README.md
 		HomeAssistantPoc\config.yaml = HomeAssistantPoc\config.yaml
+		HomeAssistantPoc\README.md = HomeAssistantPoc\README.md
 	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "HttpInfo", "HttpInfo\HttpInfo.njsproj", "{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +44,10 @@ Global
 		{477A4900-0C19-4182-9F9B-102655E117D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{477A4900-0C19-4182-9F9B-102655E117D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{477A4900-0C19-4182-9F9B-102655E117D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
