@@ -30,6 +30,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeAssistantPoc", "HomeAss
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "HttpInfo", "HttpInfo\HttpInfo.njsproj", "{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MqttPoc", "MqttPoc", "{F2BAE237-5C94-42E4-B658-EE0F123BAC7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttClientPoc", "MqttPoc\MqttClientPoc\MqttClientPoc.csproj", "{85FF2455-7A7D-42CB-BD50-2A1C205EF747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpInfo", "HttpInfo", "{68A58353-712F-4EBD-A5C2-FA2755147DD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +54,10 @@ Global
 		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FF2455-7A7D-42CB-BD50-2A1C205EF747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FF2455-7A7D-42CB-BD50-2A1C205EF747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FF2455-7A7D-42CB-BD50-2A1C205EF747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FF2455-7A7D-42CB-BD50-2A1C205EF747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +65,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E50EABC9-2466-4B11-8DE2-F17DA4C06617} = {7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}
 		{477A4900-0C19-4182-9F9B-102655E117D4} = {7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}
+		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448} = {68A58353-712F-4EBD-A5C2-FA2755147DD5}
+		{85FF2455-7A7D-42CB-BD50-2A1C205EF747} = {F2BAE237-5C94-42E4-B658-EE0F123BAC7F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C5E512E-3591-46E2-93D5-346A6670410D}
