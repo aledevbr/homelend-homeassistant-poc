@@ -20,6 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Workflows", "Github 
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\docker-build-dotnet-arm64.yaml = .github\workflows\docker-build-dotnet-arm64.yaml
 		.github\workflows\docker-build-httpinfo-arm64.yaml = .github\workflows\docker-build-httpinfo-arm64.yaml
+		.github\workflows\docker-build-rabbitmq-arm64.yaml = .github\workflows\docker-build-rabbitmq-arm64.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeAssistantPoc", "HomeAssistantPoc", "{7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}"
@@ -35,6 +36,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttClientPoc", "MqttPoc\MqttClientPoc\MqttClientPoc.csproj", "{85FF2455-7A7D-42CB-BD50-2A1C205EF747}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpInfo", "HttpInfo", "{68A58353-712F-4EBD-A5C2-FA2755147DD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{10205543-BB7A-4939-8919-613E0277CF08}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RabbitMQ", "RabbitMQ\RabbitMQ.shproj", "{F37F1F8A-DC50-408C-8FD6-1C9CF9849D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,8 +72,12 @@ Global
 		{477A4900-0C19-4182-9F9B-102655E117D4} = {7E0BC9D2-4EFE-4531-9D2D-2C579BDC9DE1}
 		{B3F5AEC8-36F1-4976-A79C-FB7C0DD04448} = {68A58353-712F-4EBD-A5C2-FA2755147DD5}
 		{85FF2455-7A7D-42CB-BD50-2A1C205EF747} = {F2BAE237-5C94-42E4-B658-EE0F123BAC7F}
+		{F37F1F8A-DC50-408C-8FD6-1C9CF9849D69} = {10205543-BB7A-4939-8919-613E0277CF08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C5E512E-3591-46E2-93D5-346A6670410D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RabbitMQ\RabbitMQ.projitems*{f37f1f8a-dc50-408c-8fd6-1c9cf9849d69}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
