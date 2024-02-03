@@ -25,7 +25,7 @@ homeassistant_api: false
 docker_api: false
 
 panel_icon: mdi:home-assistant
-panel_admin: true
+panel_admin: false
 panel_title: "RabbitMQ"
 
 #host_network: true
