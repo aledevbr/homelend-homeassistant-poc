@@ -10,16 +10,19 @@ ENV RABBITMQ_DEFAULT_PASS=admin
 #ENV RABBITMQ_LOG_BASE=/data/log
 
 # Cria o diretório de dados persistente
-#RUN mkdir -p /data/mnesia /data/log
+RUN mkdir -p /data/mnesia /data/log
 
 # Cria os diretórios necessários e ajusta as permissões
-#RUN mkdir -p /data/mnesia /data/log && \
-    #chown -R rabbitmq:rabbitmq /data
+RUN mkdir -p /data/mnesia /data/log && \
+    chown -R rabbitmq:rabbitmq /data
 
 #
 # Copia arquivos de configuração personalizados
 #COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
 COPY configs/enabled_plugins /etc/rabbitmq/enabled_plugins
+
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
 # Não é necessário definir VOLUME para /var/lib/rabbitmq, pois estamos movendo a persistência para /data
 # Isso é gerenciado pelo Home Assistant
@@ -44,4 +47,5 @@ VOLUME /data
 
 # Comando para executar o servidor RabbitMQ
 # Você pode adicionar comandos para configurar usuários e permissões aqui se necessário
-CMD ["rabbitmq-server"]
+#CMD ["rabbitmq-server"]
+CMD ["/start.sh"]
