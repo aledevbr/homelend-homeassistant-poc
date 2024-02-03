@@ -41,7 +41,7 @@ COPY configs/enabled_plugins /etc/rabbitmq/enabled_plugins
 # 25672 é a porta de comunicação segura (cluster)
 # 61613 é a porta de comunicação STOMP
 
-EXPOSE 5672 15672 
+EXPOSE 5672 15672 1883
 
 # Comando para executar o servidor RabbitMQ
 # Você pode adicionar comandos para configurar usuários e permissões aqui se necessário
