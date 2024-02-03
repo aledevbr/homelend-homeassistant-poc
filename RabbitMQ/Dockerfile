@@ -6,8 +6,8 @@ ENV RABBITMQ_DEFAULT_USER=admin
 ENV RABBITMQ_DEFAULT_PASS=admin
 
 # Define variáveis de ambiente para o RabbitMQ apontar para o diretório de dados persistente
-ENV RABBITMQ_MNESIA_BASE=/data/mnesia
-ENV RABBITMQ_LOG_BASE=/data/log
+#ENV RABBITMQ_MNESIA_BASE=/data/mnesia
+#ENV RABBITMQ_LOG_BASE=/data/log
 
 # Cria o diretório de dados persistente
 #RUN mkdir -p /data/mnesia /data/log
