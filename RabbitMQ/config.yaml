@@ -1,7 +1,7 @@
 name: "Alesil RabbitMQ"
 slug: "alesil-rabbitmq"
 description: "Servidor RabbitMQ como Add-On do Home Assistant"
-version: "v1.0.11" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-rabbitmq-arm64.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
+version: "v1.0.12" #não esquecer de atualizar a versão no arquivo .github/workflows/docker-build-rabbitmq-arm64.yaml também (e dar commit) para que o Home Assistant atualize o addon automaticamente (se estiver instalado)
 url: "https://github.com/aledevbr/homelend-homeassistant-poc"
 arch:
   # - armhf
@@ -37,8 +37,8 @@ ingress_entry: "/"
 ports:
   5672/tcp: 5672
   15672/tcp: 15672
-  # altera a porta para 1884 para evitar conflito com o addon Mosquitto
-  1883/tcp: 1884 
+  # altera a porta para 1885 para evitar conflito com o addon Mosquitto
+  1883/tcp: 1885
 
 init: false
 startup: application

@@ -21,9 +21,9 @@ ENV RABBITMQ_LOG_BASE=/data/rabbitmq/log
 #COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
 COPY configs/enabled_plugins /etc/rabbitmq/enabled_plugins
 
-#COPY start.sh /start.sh
-#RUN chmod +x /start.sh
-#
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
 # Não é necessário definir VOLUME para /var/lib/rabbitmq, pois estamos movendo a persistência para /data
 # Isso é gerenciado pelo Home Assistant
 #
