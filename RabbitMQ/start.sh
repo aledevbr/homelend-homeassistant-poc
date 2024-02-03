@@ -10,8 +10,11 @@ mkdir -p /data/rabbitmq/logs
 echo "Alterando permissões das pastas"
 chown -R rabbitmq:rabbitmq /data/rabbitmq
 
-echo "Listando arquivos da pasta /data (2)"
-ls -lah /data
+echo "Listando arquivos da pasta /data/rabbitmq/mnesia"
+ls -lah /data/rabbitmq/mnesia
+
+echo "Listando arquivos da pasta /data/rabbitmq/logs"
+ls -lah /data/rabbitmq/logs
 
 
 # Iniciando o servidor RabbitMQ

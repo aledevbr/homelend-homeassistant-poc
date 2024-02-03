@@ -10,12 +10,12 @@ ENV RABBITMQ_MNESIA_BASE=/data/rabbitmq/mnesia
 ENV RABBITMQ_LOG_BASE=/data/rabbitmq/log
 
 # Cria o diretório de dados persistente
-RUN mkdir -p /data/rabbitmq/mnesia /data/rabbitmq/log
-
+#RUN mkdir -p /data/rabbitmq/mnesia /data/rabbitmq/log
+#
 # Cria os diretórios necessários e ajusta as permissões
-RUN mkdir -p /data/rabbitmq/mnesia /data/rabbitmq/log && \
-    chown -R rabbitmq:rabbitmq /data/rabbitmq
-
+#RUN mkdir -p /data/rabbitmq/mnesia /data/rabbitmq/log && \
+    #chown -R rabbitmq:rabbitmq /data/rabbitmq
+#
 #
 # Copia arquivos de configuração personalizados
 #COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
@@ -45,5 +45,5 @@ EXPOSE 5672 15672
 
 # Comando para executar o servidor RabbitMQ
 # Você pode adicionar comandos para configurar usuários e permissões aqui se necessário
-CMD ["rabbitmq-server"]
-#CMD ["/start.sh"]
+#CMD ["rabbitmq-server"]
+CMD ["/start.sh"]
