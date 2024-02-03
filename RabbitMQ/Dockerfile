@@ -10,12 +10,13 @@ ENV RABBITMQ_MNESIA_BASE=/data/mnesia
 ENV RABBITMQ_LOG_BASE=/data/log
 
 # Cria o diretório de dados persistente
-RUN mkdir -p /data/mnesia /data/log
+#RUN mkdir -p /data/mnesia /data/log
 
 # Cria os diretórios necessários e ajusta as permissões
-RUN mkdir -p /data/mnesia /data/log && \
-    chown -R rabbitmq:rabbitmq /data
+#RUN mkdir -p /data/mnesia /data/log && \
+    #chown -R rabbitmq:rabbitmq /data
 
+#
 # Copia arquivos de configuração personalizados
 #COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
 COPY configs/enabled_plugins /etc/rabbitmq/enabled_plugins
